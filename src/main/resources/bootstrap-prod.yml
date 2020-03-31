@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      uri: http://47.105.64.181:8888
+      name: cnheri-token-eureka
+      label: master
+      profile: prod
