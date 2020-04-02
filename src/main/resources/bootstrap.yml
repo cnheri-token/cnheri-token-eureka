@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      uri: http://localhost:8888
-      name: cnheri-token-eureka
-      label: master
-      profile: dev
+      uri: http://${CONFIG_SERVER_IP:localhost}:${CONFIG_SERVER_PORT:8888}
+      name: ${EUREKA_CONFIG_NAME:cnheri-eureka}
+      label: ${CONFIG_LABEL:master}
+      profile: ${CONFIG_PROFILE:dev}
