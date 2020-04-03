@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      uri: http://${CONFIG_SERVER_IP:localhost}:${CONFIG_SERVER_PORT:8888}
+      uri: http://${SECURITY_USER_NAME:admin}:${SECURITY_USER_PASSWORD:admin}@${CONFIG_SERVER_IP:localhost}:${CONFIG_SERVER_PORT:8888}
       name: ${EUREKA_CONFIG_NAME:cnheri-eureka}
       label: ${CONFIG_LABEL:master}
       profile: ${CONFIG_PROFILE:dev}
